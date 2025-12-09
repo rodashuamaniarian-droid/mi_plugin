@@ -1,0 +1,25 @@
+name: BedWars
+main: tu.paquete.BedWarsPlugin
+version: 5.0
+api-version: 1.16
+depend: [PlaceholderAPI]
+
+commands:
+  bw:
+    description: Comando principal del plugin BedWars
+    usage: /bw <subcomando>
+    aliases: [bedwars]
+    permission: bedwars.use
+
+permissions:
+  bedwars.use:
+    description: Permite usar /bw
+    default: true
+
+  bedwars.player:
+    description: Permiso para jugar BedWars
+    default: true
+
+  bedwars.admin:
+    description: Permite todos los comandos administrativos
+    default: op

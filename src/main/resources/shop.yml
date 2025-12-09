@@ -1,0 +1,47 @@
+# Tienda BedWars 4.0
+
+items:
+  iron:
+    - name: "Espada de hierro"
+      cost: 10
+      type: "IRON_SWORD"
+    - name: "Armadura de hierro"
+      cost: 15
+      type: "IRON_CHESTPLATE"
+  gold:
+    - name: "Espada de oro"
+      cost: 20
+      type: "GOLD_SWORD"
+    - name: "Armadura de oro"
+      cost: 25
+      type: "GOLD_CHESTPLATE"
+  diamond:
+    - name: "Espada encantada"
+      cost: 50
+      type: "DIAMOND_SWORD"
+    - name: "Pico encantado"
+      cost: 50
+      type: "DIAMOND_PICKAXE"
+  emerald:
+    - name: "Bola explosiva"
+      cost: 75
+      type: "TNT"
+
+upgrades:
+  generator:
+    iron:
+      level1: 1
+      level2: 2
+      level3: 3
+    gold:
+      level1: 1
+      level2: 2
+      level3: 3
+  sharpness:
+    level1: 1
+    level2: 2
+    level3: 3
+  protection:
+    level1: 1
+    level2: 2
+    level3: 3

@@ -1,0 +1,27 @@
+# Configuración principal de BedWars 4.0
+
+# Ubicaciones
+arena:
+  pos1: world,-122.84278556432687,70.0,22.86651175782068,-120.30365,32.100056
+  pos2: world,-114.07785028649829,70.0,10.52185357360085,-115.20392,20.70006
+lobby: world,-123.52438768381762,69.0,32.8825597629024,-330.4535,38.55004
+
+# Equipos y spawns
+teams:
+  red:
+    spawn: world,-121.0,70.0,20.0,0.0,0.0
+    bed: world,-121.0,70.0,21.0
+  blue:
+    spawn: world,-116.0,70.0,21.0,0.0,0.0
+    bed: world,-116.0,70.0,22.0
+  green:
+    spawn: world,-118.0,70.0,12.0,0.0,0.0
+    bed: world,-118.0,70.0,13.0
+  yellow:
+    spawn: world,-120.0,70.0,14.0,0.0,0.0
+    bed: world,-120.0,70.0,15.0
+
+# Configuración general
+maxPlayers: 16
+minPlayers: 2
+gameTime: 15 # minutos
