@@ -1,0 +1,53 @@
+plugins {
+    id 'java'
+}
+
+group = 'tu.paquete'
+version = '3.1'
+
+repositories {
+    mavenCentral()
+
+    // Repositorio oficial de Paper para 1.20.6
+    maven {
+        name = 'papermc-repo'
+        url = 'https://repo.papermc.io/repository/maven-public/'
+    }
+
+    // PlaceholderAPI
+    maven { url = 'https://repo.extendedclip.com/content/repositories/placeholderapi/' }
+
+    // Vault
+    maven { url = 'https://nexus.hc.to/content/repositories/pub_releases/' }
+
+    // WorldEdit / WorldGuard
+    maven { url = "https://maven.enginehub.org/repo/" }
+}
+
+dependencies {
+    // Paper 1.20.6 (Java 21)
+    compileOnly "io.papermc.paper:paper-api:1.20.6-R0.1-SNAPSHOT"
+
+    // PlaceholderAPI
+    compileOnly 'me.clip:placeholderapi:2.11.5'
+
+    // Vault
+    compileOnly 'net.milkbowl.vault:VaultAPI:1.7'
+
+    // WorldEdit
+    compileOnly 'com.sk89q.worldedit:worldedit-bukkit:7.2.15'
+
+    // WorldGuard
+    compileOnly 'com.sk89q.worldguard:worldguard-bukkit:7.0.10'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+    options.release = 21
+}

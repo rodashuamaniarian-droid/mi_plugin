@@ -1,0 +1,8 @@
+name: BedWarsPlugin
+main: tu.paquete.BedWarsPlugin
+version: 1.1
+api-version: 1.20
+commands:
+  bw:
+    description: Comando principal de BedWars
+    usage: /<command> <subcommand>
